@@ -68,7 +68,7 @@
   .cases-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px}
   .case-card{background:#fff;border-radius:14px;overflow:hidden;border:1px solid #e8edf5;transition:all .25s}
   .case-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(43,122,171,.08);border-color:#2b7aab22}
-  .case-card .case-img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;background:#e8edf5}
+  .case-card .case-img-wrap{width:100%;display:block;background:#e8edf5;line-height:0}.case-card .case-img-wrap img{width:100%;display:block;cursor:zoom-in;transition:opacity .2s}.case-card .case-img-wrap:hover img{opacity:.9}
   .case-card .case-body{padding:20px 24px 24px}
   .case-card .case-body h3{font-size:1.05rem;font-weight:700;margin-bottom:6px}
   .case-card .case-body .case-meta{font-size:.8rem;color:#2b7aab;font-weight:600;margin-bottom:8px}
@@ -165,7 +165,7 @@
 <div class="cases-grid">
 
 <div class="case-card">
-  <img class="case-img" src="images/case-1.jpg" alt="种植修复病例 — 种植体植入、基台连接、冠修复">
+  <a class="case-img-wrap" href="images/case-1.jpg" target="_blank" rel="noopener" title="点击查看大图"><img src="images/case-1.jpg" alt="固定修复病例图片"></a>
   <div class="case-body">
     <h3>固定修复</h3>
     <p>上颌牙列缺损修复后成果</p>
@@ -220,6 +220,7 @@ document.querySelectorAll('.fade-in').forEach(function(e){obs.observe(e)});
 </script>
 </body>
 </html>
+
 
 
 
